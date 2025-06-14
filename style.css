@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(36, 36, 36, 0.5), #000), url(images/main\ background.png);
+    position: relative;
+    padding: 10px 8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+nav .logo{
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+}
+ nav .logo img{
+    width: 100%;
+ }
+
+ nav button{
+    border: 0;
+    outline: none;
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 7px;
+ }
+
+.lang-btn{
+    background: transparent;
+    border: 1px solid white;
+ }
+
+  .lang-btn i{
+    margin-left: 6px;
+ }
+
+ .header-text{
+display: grid;
+place-items: center;
+text-align: center;
+margin-top: 20%;
+ }
+
+ .header-text h1{
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 800;
+ }
+
+ .header-text h3{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0;
+ }
+
+ .header-text p{
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+
+ .header-text .email{
+    display: flex;
+    gap: 6px;
+    border: 0;
+    outline: 0;
+    align-items: center;
+    margin: auto;
+ }
+
+ .email input{
+    padding: 20px 60px;
+    outline: none;
+    border: 1px solid grey;
+    background: rgba(20, 20, 20, 0.8);
+    font-size: 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: white;
+
+ }
+
+ .email button{
+    background: rgb(237, 51, 51);
+    padding: 20px 40px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+ }
+ .email i{
+    margin-left: 12px;
+ }
+
+hr{
+   background: grey;
+   width: 100%;
+   height: 7px;
+   border: 0;
+   outline: 0;
+   border-radius: 100% 50%;
+   background: linear-gradient(to right,#ae2896,#509bf5);
+   filter: drop-shadow(0 -4px 12px #ea05ea);
+   
+}
+
+
+footer .trending-now{
+   margin-bottom: 20px;
+}
+
+.trending-now h2{
+   padding: 50px 150px;
+   font-size: 30px;
+   font-weight: 500;
+   color: white;
+   margin-bottom: 10px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.trending-list{
+   display: flex;
+   gap: 30px;
+   overflow-x: auto;
+   padding-bottom: 10px;
+   margin-left: 180px;
+   margin-bottom: 40px;
+}
+
+.trending-item{
+   position: relative;
+   width: 160px;
+   flex-shrink: 0;
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+   cursor: pointer;
+   height: 240px;
+
+}
+
+.trending-item img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+
+}
+.trending-item:hover{
+   width: 170px;
+   transition: width ;
+}
+
+.image-container{
+   position: relative;
+}
+
+.overlay-number{
+   position: absolute;
+   top: 8px;
+   right: 10;
+   font-size: 6em;
+   font-weight: bold;
+   color: white;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+-webkit-text-stroke: 2px black;
+filter: drop-shadow(grey);
+}
+
+.container-1{
+   padding: 40px;
+   width: 100%;
+   margin: auto;
+}
+
+.container-1 h2{
+   font: 55px;
+   margin-left: 100px;
+   margin-bottom: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+   text-decoration: dashed;
+   max-lines: 40px;
+   filter: drop-shadow(white);
+}
+
+.cards{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+
+}
+
+.card{
+   flex: 1 1 22%;
+   background: linear-gradient(to right,rgb(206, 23, 23),#e828cb);
+   border-radius: 20px;
+   padding: 55px 40px;
+   width: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+   gap: 10px;
+   margin-left: 20px;
+}
+
+.card h3{
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+
+.card p{
+   font-size: 14px;
+   color: #e0e0e0;
+   margin-bottom: 15px;
+}
+
+.icon{
+   font-size: 30px;
+   text-align: right;
+}
+
+.card:hover{
+   background: none;
+   filter: drop-shadow(0 -4px 12px #ea05ea);
+}
+
+
+.faq{
+   width: 100%;
+
+}
+.faq h1{
+   text-align: center;
+   font-size: 40px;
+   margin-bottom: 25px;
+   margin-top: 30px;
+}
+
+.faq .row{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+
+.faq .row button{
+   padding: 30px 50px;
+   width: 70%;
+   font-size: 22px;
+   font-weight:500;
+   background: rgb(28, 27, 27);
+   color: white;
+   outline: 0;
+   margin-bottom: 8px;
+   text-align: left;
+
+
+
+}
+
+.faq .row button:hover{
+   background: #5a5757;
+}
+
+.faq .row button::after{
+   content: '+';
+   float: right;
+}
+
+.faq-footer .header-text{
+   margin-top: 30px;
+}
+
+.faq-footer .header-text p{
+   font-size: 30px;
+}
+
+.faq-footer .email{
+   display: flex;
+   gap: 6px;
+   border: 0;
+   outline: 0;
+   align-items: center;
+   margin: auto;
+   padding: 0 100px;
+   text-align: center;
+   margin-bottom: 30px;
+
+}
+
+.faq-footer .email i{
+   margin-left: 25px;
+   border-radius: 0px;
+}
+
+.lang-btn{
+   margin-bottom: 30px;
+   color: white;
+   font-size: 15px;
+   padding: 10px 30px;
+   border-radius: 5px;
+}
+
+.end{
+   width: 100%;
+   padding: 50px 12% 20px;
+}
+
+.end .row{
+   width: 90%;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 50px;
+   padding: 20px 0;
+}
+
+.end .row .col a{
+   display: block;
+   color: rgb(94, 93, 93);
+   text-decoration: underline;
+   margin-bottom: 10px;
+   font-size: 20px;
+   font-weight: 550;
+
+
+}
+
+.end h2{
+   font-size: 25px;
+   color: #918e8e;
+   margin-bottom: 30px;
+}
+
+.end p{
+   font-size: 25px;
+   color: grey;
+}
